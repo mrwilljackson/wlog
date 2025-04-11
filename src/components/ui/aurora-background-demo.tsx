@@ -17,7 +17,7 @@ export function AuroraBackgroundDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 pt-8 md:pt-0"
       >
         <div className="relative w-[200px] h-[200px] mb-6 overflow-hidden rounded-full border-2 border-white/20">
           <Image
