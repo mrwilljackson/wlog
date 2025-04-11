@@ -1,12 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { FileText } from "lucide-react";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export function AuroraBackgroundDemo() {
+  // Add iOS detection and extra padding
+  useEffect(() => {
+    // Check if the device is iOS
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+
+    if (isIOS) {
+      // Add a class to the body for iOS-specific styling
+      document.body.classList.add('ios-device');
+
+      // Add extra padding to the top of the page
+      const mainContent = document.querySelector('main');
+      if (mainContent) {
+        mainContent.style.paddingTop = '4rem';
+      }
+    }
+
+    return () => {
+      document.body.classList.remove('ios-device');
+    };
+  }, []);
+
   return (
     <AuroraBackground>
       <motion.div
@@ -17,7 +39,7 @@ export function AuroraBackgroundDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4 pt-8 md:pt-0"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 pt-16 md:pt-0 ios-pt-fix"
       >
         <div className="relative w-[200px] h-[200px] mb-6 overflow-hidden rounded-full border-2 border-white/20">
           <Image

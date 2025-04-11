@@ -156,7 +156,7 @@
 
 /* Safe area utilities for iOS */
 .pt-safe {
-  padding-top: env(safe-area-inset-top, 1rem);
+  padding-top: env(safe-area-inset-top, 2.5rem);
 }
 
 .pb-safe {
@@ -166,4 +166,20 @@
 .px-safe {
   padding-left: env(safe-area-inset-left, 0.5rem);
   padding-right: env(safe-area-inset-right, 0.5rem);
+}
+
+/* Specific iOS fixes */
+@supports (-webkit-touch-callout: none) {
+  .ios-pt-fix {
+    padding-top: 4rem !important;
+  }
+}
+
+/* iOS device class added via JS */
+body.ios-device main {
+  padding-top: 4rem !important;
+}
+
+body.ios-device .ios-pt-fix {
+  padding-top: 6rem !important;
 }
