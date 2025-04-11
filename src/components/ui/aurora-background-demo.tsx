@@ -49,7 +49,7 @@ export function AuroraBackgroundDemo() {
               </svg>
               <h3 className="text-xl font-semibold"><a href="https://www.linkedin.com/in/mrwilljackson/">LinkedIn</a></h3>
             </div>
-            <p className="text-sm opacity-80"><a href="https://www.linkedin.com/in/mrwilljackson/">Connect with me here</a>, find out what I do and what I've done in the past.</p>
+            <p className="text-sm opacity-80"><a href="https://www.linkedin.com/in/mrwilljackson/">Connect with me here</a>, find out what I do and what I&apos;ve done in the past.</p>
           </div>
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg max-w-xs">
             <div className="flex items-center gap-2 mb-2">
