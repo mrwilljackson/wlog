@@ -17,10 +17,10 @@ export function AuroraBackgroundDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4 pt-4 md:pt-0"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 md:pt-0"
       >
         <div className="relative w-[200px] h-[200px] mb-6 overflow-hidden rounded-full border-2 border-white/20">
-          <Image
+                  <Image
             src="https://avatars.githubusercontent.com/u/248461?s=400&u=615df31b1afbea570de3ae3fe817e814d90b9cdb&v=4"
             alt="Will Jackson"
             width={200}

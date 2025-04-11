@@ -156,7 +156,7 @@
 
 /* Safe area utilities for iOS */
 .pt-safe {
-  padding-top: env(safe-area-inset-top, 0.5rem);
+  padding-top: env(safe-area-inset-top, 1rem);
 }
 
 .pb-safe {
