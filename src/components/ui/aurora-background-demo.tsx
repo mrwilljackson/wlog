@@ -33,7 +33,8 @@ export function AuroraBackgroundDemo() {
           Will Jackson
         </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 text-center w-full">
-          human centered design, development<br />social entrepreneur.
+          social entrepreneur<br />human centered designer<br />
+          <span className="font-bold text-base md:text">Playphysio</span><span className="font-normal text-base md:text"> = treatment done <span className="font-bold">right</span>.</span>
         </div>
         <button className="bg-purple-600 dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
           <a href="https://play.physio">Find out about Playphysio&reg;</a>
